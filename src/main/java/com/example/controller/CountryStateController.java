@@ -25,6 +25,7 @@ public class CountryStateController {
 	@PostMapping("/addCountryDetail")
 	public String addCountryDetail(@RequestBody CountryMaster countryMaster) {
 		countryMasterService.addCountryDetail(countryMaster);
+		System.out.println("Calling add country details");
 		return "Inserted country master details successfully";
 	}
 
