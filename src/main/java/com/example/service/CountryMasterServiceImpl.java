@@ -30,11 +30,13 @@ public class CountryMasterServiceImpl implements CountryMasterService {
 	@Override
 	public CountryMaster getCountryMasterDetails(long countryCode) {
 		Optional<CountryMaster> countryMasterDetails = countryMasterDao.findById(countryCode);
+		System.out.println("Calling getCountry Method.");
 		return countryMasterDetails.get();
 	}	
 
 	@Override
 	public void deleteCountryMasterDetails(long countryCode) {
+		System.out.println("Calling deleteCountry Method.");
 		countryMasterDao.deleteById(countryCode);
 	}
 
