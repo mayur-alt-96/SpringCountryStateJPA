@@ -34,6 +34,7 @@ public class CountryStateController {
 		countryMasterService.addListOfCountryDetails(countryMasters);
 		System.out.println("Calling add country details");
 		System.out.println("Calling add country details");
+		System.out.println("Calling add country details");
 		return "Inserted List of country master details successfully";
 	}
 
