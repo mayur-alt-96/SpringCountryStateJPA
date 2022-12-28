@@ -17,6 +17,7 @@ public class CountryMasterServiceImpl implements CountryMasterService {
 
 	@Override
 	public void addCountryDetail(CountryMaster countryMaster) {
+		System.out.println("");
 		countryMasterDao.save(countryMaster);
 	}
 
